@@ -1,0 +1,39 @@
+#!/bin/bash
+
+file1="$1"
+file2="$2"
+
+gcc -o testone -g testdominion.o $file1  rngs.o interface.o -fpic -coverage -lm
+gcc -o testtwo -g testdominion.o $file2  rngs.o interface.o -fpic -coverage -lm
+
+pass=0
+fail=0
+
+for i in `seq 1 20`;
+    do
+        rand=$RANDOM
+        testone $rand > testoneresults.out
+        testtwo $rand > testtworesults.out
+
+        #echo "Testing" >> testoneresults.out
+
+        result="$(diff testoneresults.out testtworesults.out)"
+
+        if [ $? -eq 0 ]
+            then
+                echo "TEST PASSED"
+                ((pass+=1))
+            else
+                echo -n "TEST FAILED with rand: "
+                echo $rand
+                #echo $result
+                ((fail+=1))
+            fi
+    done
+    
+    echo "-----------------------------------------------------------------------"
+    echo -n "Passes: " 
+    echo $pass
+    echo -n "Fails: "
+    echo $fail
+    echo "-----------------------------------------------------------------------"

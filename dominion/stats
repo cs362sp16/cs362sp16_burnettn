@@ -1,0 +1,151 @@
+#!/bin/bash
+
+#The line below creates a temporary file
+datafilepath="datafile$$.temp"
+#The code below checks if the user is entering data through std in, and if so 
+#   it enters the data into the temporary file
+if [ "$#" = 1 ]; then
+    cat > $datafilepath
+#The code below checks if the user is giving a file name, checks if the file
+#   exists and is readable, then enters the data into the temporary file
+elif [ "$#" = 2 ]; then
+    if test -r "$2" -a -f "$2"; then 
+        datafilepath=$2
+    else
+        #If the file does not exist or is not readable, the message is sent to
+        #   stderr
+        >&2 echo "cannot read $2"
+        exit 1
+    fi
+else
+    #If the user did not input either 1 or two parameters
+    >&2 echo "Usage: ./stats {-rows|-cols} [file]" 
+    exit 1
+fi
+
+#This statement removes all temporary files when the program is exitted or ends
+trap "rm -f datafile*.temp" EXIT
+
+#This block of code describes behavior when the user chooses to use columns
+if [ "$(echo $1 | cut -c1-2)" == "-c" ]; then
+    total=0
+    i=0
+    #This block of code reads the input into an array to allow easier access
+    #   later
+    while read Line; do
+        if (("$total" == 0)); then
+            for word in $Line; do
+                total=$(expr $total + 1)
+                num_array[$i]=$word
+                i=$(expr $i + 1)
+            done
+        else
+            for word in $Line; do
+                num_array[$i]=$word
+                i=$(expr $i + 1)
+            done
+        fi
+    #This line of code directs the input into the while loop
+    done<$datafilepath
+    #This code prevents a divide by zero error
+    if (("$total" == 0)); then
+        echo
+    else
+        num_lines=$(($i/$total))
+        #This for loop iterates through every line of data one at a time
+        for ((x = 0 ; x < $total ; x++)); do
+            #This for loop iterates through every element in that line of data
+            for ((y = 0 ; y < $num_lines ; y++)); do
+                add=$(($y * $total))
+                place=$(expr $x + $add)
+                #A temporary array holding one line of data is created
+                temp_array[$y]=${num_array[$place]} 
+            done
+            #This block of code sorts the temporary array to allow us to find the
+            #   median
+            sorted_num_array=($(
+            for num in "${temp_array[@]}"; do
+                echo "$num"
+            done | sort -n))
+            #This line of code puts the correct median in an array 
+            med_array[$x]=${sorted_num_array[$(($num_lines / 2))]}
+            sum=0
+            #This block of code sums of the line of data
+            for num in ${temp_array[@]}; do
+                sum=$(expr $sum + $num)
+            done
+            #Althought the average is calculated, it must be determined whether 
+            #   or not the value was trunkated from > .5, this block of code 
+            #   corrects potentially invalid trunkations
+            avg=$(($sum/$num_lines))
+            addhalf=$(($num_lines*50))
+            bigsum=$(($sum*100))
+            bigtot=$(($num_lines*100))
+            remain=$(($bigsum % $bigtot))
+            if (($remain+1 > $addhalf)); then
+                avg=$(($avg+1))
+            fi
+            avg_array[$x]=$avg
+        done
+    fi
+    #After filling the median and average arrays, this block of code prints the
+    #   arrays to std out in the desired format
+    echo "Averages:"
+    for num in ${avg_array[@]}; do
+        echo -n "$num   "
+    done
+    echo ""
+    echo "Medians:"
+    for num in ${med_array[@]}; do
+        echo -n "$num   "
+    done
+    echo ""
+#This block of code is run is the user has seleted the rows option
+elif [ "$(echo $1 | cut -c1-2)" == "-r" ]; then
+    echo "Averages: Medians:"
+    #The while loop runs for every line in the data
+    while read myLine; do
+        sum=0
+        i=0
+        total=0
+        #The for loop runs for every word in each line
+        for word in $myLine; do
+            #Each line is temporarily stored in an array
+            num_array[$i]=$word
+            #A sum is taken of each line
+            sum=$(expr $sum + $word)
+            #An amount of elements in each row is taken
+            total=$(expr $total + 1)
+            i=$(expr $i + 1)
+        done    
+        #Prevents division by 0
+        if (("$total" == 0)); then
+            exit
+        fi
+        #The average is taken, and then proper rounding is applied
+        avg=$(($sum/$total))
+        addhalf=$(($total*50))
+        bigsum=$(($sum*100))
+        bigtot=$(($total*100))
+        remain=$(($bigsum % $bigtot))
+        #Adding one ss an alternative to >= 
+        if (($remain+1 > $addhalf)); then
+            avg=$(($avg+1))
+        fi
+        echo -n "    $avg    "  
+        #Each temporary array is sorted into another temporary array
+        sorted_num_array=($(
+            for num in "${num_array[@]}"; do
+                echo "$num"
+            done | sort -n))
+        #The correct median is printed
+        echo "  ${sorted_num_array[$(($total/2))]}"
+    #This line feeds the input file into the while loop
+    done<$datafilepath
+    echo ""
+else
+    #If the user did not enter -r* or -c*, they are reminded of the proper way
+    #   to call the script
+    >&2 echo "Usage: ./stats {-rows|-cols} [file]" 
+    exit 1
+fi

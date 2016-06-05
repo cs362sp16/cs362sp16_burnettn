@@ -1,0 +1,15 @@
+TEST RESULTS:
+
+--------------------------------------
+ COUNCIL ROOM:
+--------------------------------------
+ PASSES: 0
+ FAILS: 862 
+ PASS RATE: 0.000000
+--------------------------------------
+
+COVERAGE:
+
+Function 'cardEffect_council_room'
+Lines executed:100.00% of 9
+

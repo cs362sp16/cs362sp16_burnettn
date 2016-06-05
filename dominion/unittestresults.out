@@ -1,0 +1,19 @@
+FAILED ASSERTION: I should be allowed to play with a lot of people!
+FAILED ASSERTION: Score Should be 11
+FAILED ASSERTION: Score Should be 19
+FAILED ASSERTION: Village should give 2 more actions
+FAILED ASSERTION: great_hall should give 1 more action
+FAILED ASSERTION: Smithy should not give you an action
+FAILED ASSERTION: Adventurer should give you 2 cards
+FAILED ASSERTION: Adventurer should not give you an action
+FAILED ASSERTION: Adventurer should give you two treasure cards
+GCOV AFTER 1 TEST
+File 'dominion.c'
+Lines executed:31.85% of 562
+Creating 'dominion.c.gcov'
+
+GCOV AFTER PlAYING A GAME
+File 'dominion.c'
+Lines executed:45.91% of 562
+Creating 'dominion.c.gcov'
+

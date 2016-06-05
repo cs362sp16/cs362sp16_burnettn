@@ -1,0 +1,5 @@
+4/16/2016 - I moved adventurer into a function
+4/16/2016 - I moved council_room into a function, declared new i int in function instead of passing parameter
+4/16/2016 - I moved feast into a function, declared new i and x int in function instead of passing parameter, was then able to comment x out of cardEffect()
+4/16/2016 - I moved mine into a function, declared new i instead of passing parameter
+4/16/2016 - I moved remodel into a function, declared new i instead of passing parameter

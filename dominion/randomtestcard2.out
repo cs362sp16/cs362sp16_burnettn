@@ -1,0 +1,15 @@
+TEST RESULTS:
+
+--------------------------------------
+ SMITHY:
+--------------------------------------
+ PASSES: 0
+ FAILS: 862 
+ PASS RATE: 0.000000
+--------------------------------------
+
+COVERAGE:
+
+Function 'cardEffect_smithy'
+Lines executed:0.00% of 5
+

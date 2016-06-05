@@ -1,0 +1,5 @@
+File 'dominion.c'
+Lines executed:31.85% of 562
+Creating 'dominion.c.gcov'
+
+I am only running about 32% of lines in the code, however this is not completely unexpected. Most of the code is in the 'cardEffect' function, and since I am only testing 4 cards, I cannot possibly test much more of the code.

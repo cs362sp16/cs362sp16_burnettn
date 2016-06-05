@@ -1,0 +1,1000 @@
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:31.08% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.25% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.64% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.29% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.22% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:24.87% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.75% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:28.06% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:33.39% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:22.91% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.64% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:24.33% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.45% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.09% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.62% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.93% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.80% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:19.89% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:21.49% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:21.85% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:31.26% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:32.15% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:34.46% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.22% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.22% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.45% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.09% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:27.53% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.93% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.93% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:28.24% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.93% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.11% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.82% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:22.02% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.25% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.96% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:24.16% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.45% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.09% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.25% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.45% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.04% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.09% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:26.82% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:28.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.07% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.43% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.27% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:25.58% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:23.45% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.60% of 563
+Creating 'dominion.c.gcov'
+
+rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+gcc -c adventurer_turantula.c -g -fpic -coverage -lm
+gcc -c rngs.c -g  -fpic -coverage -lm
+gcc -c dominion.c -g  -fpic -coverage -lm
+gcc -c interface.c -g  -fpic -coverage -lm
+gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o -fpic -coverage -lm
+File 'dominion.c'
+Lines executed:20.78% of 563
+Creating 'dominion.c.gcov'
+

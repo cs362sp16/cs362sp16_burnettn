@@ -1,0 +1,260 @@
+Assignment 4 write up by Nathan Burnett
+
+=========================================================================================
+============================================
+MY IMPLEMENTATION(seed 433):
+
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought copper
+1 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought mine
+2 Bought outpost
+0 Bought silver
+1 Bought copper
+2 Bought silver
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought gardens
+1 plays: mine
+1 Bought minion
+2 Bought silver
+0 plays: gardens
+0 Bought silver
+1 Bought silver
+2 plays: outpost
+2 Bought silver
+0 Bought embargo
+1 plays: minion
+1 Bought silver
+2 Bought ambassador
+0 Bought silver
+1 Bought province
+2 Bought great_hall
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought cutpurse
+1 Bought feast
+2 plays: great_hall
+2 Bought silver
+0 Bought silver
+1 Bought sea_hag
+2 Bought province
+0 plays: embargo
+0 Bought silver
+2 plays: ambassador
+1 plays: sea_hag
+1 Bought copper
+0 plays: cutpurse
+0 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought province
+1 Bought silver
+0 Bought silver
+1 Bought silver
+0 Bought province
+1 Bought silver
+0 Bought silver
+1 Bought silver
+2 Bought province
+1 Bought province
+2 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought province
+1 Bought silver
+2 Bought province
+1 Bought silver
+2 Bought silver
+0 Bought province
+0 Bought silver
+1 Bought silver
+2 Bought province
+1 Bought silver
+2 Bought copper
+1 Bought province
+2 Bought province
+Final gamestate:
+
+Player 0:
+    Cards:
+silver, estate, copper, copper, silver, gardens, silver, 
+    Score: 16
+
+Player 1:
+WINNER!
+    Cards:
+province, 
+    Score: 52
+
+Player 2:
+    Cards:
+copper, copper, silver, copper, copper, silver, estate, copper, silver, silver, silver, silver, estate, 
+    Score: 31
+
+============================================
+=========================================================================================
+
+=========================================================================================
+============================================
+CLASSMATES IMPLEMENTATION(seed 433):
+
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought copper
+1 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought mine
+2 Bought outpost
+0 Bought silver
+1 Bought copper
+2 Bought silver
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought gardens
+1 plays: mine
+1 Bought minion
+2 Bought silver
+0 plays: gardens
+0 Bought silver
+1 Bought silver
+2 plays: outpost
+2 Bought silver
+0 Bought embargo
+1 plays: minion
+1 Bought silver
+2 Bought ambassador
+0 Bought silver
+1 Bought province
+2 Bought great_hall
+0 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought cutpurse
+1 Bought feast
+2 plays: great_hall
+2 Bought silver
+0 Bought silver
+1 Bought sea_hag
+2 Bought province
+0 plays: embargo
+0 Bought silver
+2 plays: ambassador
+1 plays: sea_hag
+1 Bought copper
+0 plays: cutpurse
+0 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought province
+2 Bought silver
+0 Bought province
+1 Bought silver
+0 Bought silver
+1 Bought silver
+2 Bought province
+1 Bought silver
+2 Bought province
+1 Bought province
+2 Bought silver
+1 Bought silver
+2 Bought silver
+0 Bought silver
+2 Bought silver
+0 Bought silver
+1 Bought silver
+2 Bought province
+0 Bought province
+1 Bought silver
+2 Bought province
+0 Bought province
+2 Bought silver
+0 Bought silver
+1 Bought silver
+1 Bought silver
+2 Bought province
+Final gamestate:
+
+Player 0:
+    Cards:
+estate, copper, copper, silver, gardens, silver, silver, copper, copper, silver, copper, silver, estate, silver, province, silver, copper, silver, 
+    Score: 14
+
+Player 1:
+    Cards:
+silver, province, silver, silver, silver, silver, silver, estate, estate, feast, 
+    Score: 28
+
+Player 2:
+WINNER!
+    Cards:
+silver, province, province, province, silver, silver, 
+    Score: 50
+
+============================================
+=========================================================================================
+
+
+=========================================================================================
+============================================
+DIFFERENCES BETWEEN IMPLEMENTATIONS:
+
+./domdiff /nfs/stak/students/b/burnettn/cs362/cs362sp16_burnettn/dominion.c /nfs/stak/students/b/burnettn/cs362/cs362sp16_burnettn/other_dominion/dominion.c 433
+TEST FAILED
+52,54c52 < 1 Bought silver < 0 Bought silver < 1 Bought silver --- > 2 Bought silver 59a58,59 > 1 Bought silver > 2 Bought province 65c65,66 < 1 Bought province --- > 2 Bought silver > 0 Bought silver 67a69 > 0 Bought province 69c71 < 2 Bought silver --- > 2 Bought province 70a73 > 2 Bought silver 73d75 < 2 Bought province 75,76d76 < 2 Bought copper < 1 Bought province 82,83c82,83 < silver, estate, copper, copper, silver, gardens, silver, < Score: 16 --- > estate, copper, copper, silver, gardens, silver, silver, copper, copper, silver, copper, silver, estate, silver, province, silver, copper, silver, > Score: 14 86d85 < WINNER! 88,89c87,88 < province, < Score: 52 --- > silver, province, silver, silver, silver, silver, silver, estate, estate, feast, > Score: 28 91a91 > WINNER! 93,94c93,94 < copper, copper, silver, copper, copper, silver, estate, copper, silver, silver, silver, silver, estate, < Score: 31 --- > silver, province, province, province, silver, silver, > Score: 50
+
+============================================
+=========================================================================================
+
+=========================================================================================
+============================================
+WHEN RUN 20 TIMES WITH RANDOM NUMBERS:
+
+./domdiff20 /nfs/stak/students/b/burnettn/cs362/cs362sp16_burnettn/dominion.c /nfs/stak/students/b/burnettn/cs362/cs362sp16_burnettn/other_dominion/dominion.c
+TEST FAILED with rand: 8044
+TEST FAILED with rand: 10921
+TEST PASSED
+TEST FAILED with rand: 308
+TEST FAILED with rand: 32612
+TEST PASSED
+TEST FAILED with rand: 24763
+TEST PASSED
+TEST FAILED with rand: 14425
+TEST PASSED
+TEST FAILED with rand: 27011
+TEST PASSED
+TEST FAILED with rand: 7648
+TEST FAILED with rand: 5885
+TEST PASSED
+TEST FAILED with rand: 3225
+TEST PASSED
+TEST FAILED with rand: 13674
+TEST FAILED with rand: 24619
+TEST FAILED with rand: 10360
+---------------------
+Passes: 7
+Fails: 13
+---------------------
+============================================
+=========================================================================================
+
+=========================================================================================
+============================================
+ANALYSIS:
+
+    Our programs tended to agree about 25% of the time (the run above was on the higher side of passing rates). To identify correctness, I first looked at the scores, and I know that the scoring on my dominion.c is not consistently correct, however niether was the scoring of my classmates. This was the case with many of our issues. When I looked at differences, niether of our programs behaved correctly. However this testing would strongly benefit the both of us, as it identified faults in both of our results. While this does not gurentee that the rest is correct, it certainly identifies incorrect parts. However, differential is not ideal for this case because both of our codes are still VERY incomplete. This meant that every time a test failed, it has lot's of errors. Differential testing would be much more beneficial if our programs were closer to complete, then we would have a simpler time isolating 1 or 2 issues that are occuring.
+
+    Both of our dominion.c programs had approximately 55% coverage on the first run, and were up to ~75% after 5 runs, being well above the requirement. I believe that my tester does a good job of making sure each card is run once.
+
+============================================
+=========================================================================================

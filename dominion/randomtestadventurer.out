@@ -1,0 +1,15 @@
+TEST RESULTS:
+
+--------------------------------------
+ ADVENTURER:
+--------------------------------------
+ PASSES: 1
+ FAILS: 0 
+ PASS RATE: 1.000000
+--------------------------------------
+
+COVERAGE:
+
+Function 'cardEffect_adventurer'
+Lines executed:93.33% of 15
+

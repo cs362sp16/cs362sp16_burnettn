@@ -1,0 +1,24 @@
+#!/bin/bash
+
+file1="$1"
+file2="$2"
+rand="$3"
+
+gcc -o testone -g testdominion.o $file1  rngs.o interface.o -fpic -coverage -lm
+gcc -o testtwo -g testdominion.o $file2  rngs.o interface.o -fpic -coverage -lm
+
+testone $3 > testoneresults.out
+testtwo $3 > testtworesults.out
+
+#echo "Testing" >> testoneresults.out
+
+result="$(diff testoneresults.out testtworesults.out)"
+
+if [ $? -eq 0 ]
+    then
+        echo "TEST PASSED"
+    else
+        echo "TEST FAILED"
+        echo $result
+    fi
+

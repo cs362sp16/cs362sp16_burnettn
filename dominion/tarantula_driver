@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#file2="$2"
+#rand="$3"
+
+#gcc -o testone -g testdominion.o $file1  rngs.o interface.o -fpic -coverage -lm
+#gcc -o testtwo -g testdominion.o $file2  rngs.o interface.o -fpic -coverage -lm
+
+#echo "Testing" >> testoneresults.out
+
+RANDOM=$$
+pass=0
+fail=0
+
+rm -f output.txt
+rm -f garbage.txt
+rm -f results.txt
+
+for i in `seq 1 100`;
+do
+    rand=$RANDOM
+    #echo $rand
+    #pass=$(./adventurer_turantula $rand >> output.txt)
+    
+    make clean >> garbage.txt
+    make tarantula >> garbage.txt
+    ./adventurer_turantula $rand >> output.txt
+
+    if [ $? -eq 1 ]
+        then
+            #echo -n "TEST PASSED: "
+            echo "1" >> results.txt
+            pass=$(($pass+1))
+        else
+            #echo -n "TEST FAILED: "
+            echo "0" >> results.txt
+            fail=$(($fail+1))
+        fi
+    #rand=$(($rand+1))
+            gcov dominion.c >> garbage.txt
+            cat dominion.c.gcov | grep "void cardEffect_adventurer" -A 14 >> results.txt
+done
+echo
+echo
+echo -n "Passes: "
+echo $pass
+echo -n "Fails: "
+echo $fail

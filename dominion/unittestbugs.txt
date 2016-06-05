@@ -1,0 +1,13 @@
+FAILED ASSERTION: I should be allowed to play with a lot of people!
+FAILED ASSERTION: Score Should be 11
+FAILED ASSERTION: Score Should be 19
+FAILED ASSERTION: Village should give 2 more actions
+FAILED ASSERTION: great_hall should give 1 more action
+FAILED ASSERTION: Smithy should not give you an action
+FAILED ASSERTION: Adventurer should give you 2 cards
+FAILED ASSERTION: Adventurer should not give you an action
+FAILED ASSERTION: Adventurer should give you two treasure cards
+
+The first bug I have found include the scoring of victory cards
+Another commonly repeating bug is that the number of remaining actions is not being incremented properly
+I also found that Adventurer did not exhibit any of the proper behavior that would be expected from it 

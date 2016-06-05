@@ -1,0 +1,1600 @@
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      290:  650:    while((*drawntreasure)<2){
+      288:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      288:  653:        drawCard(currentPlayer, state);
+      288:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      288:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      286:  658:            temphand[(*z)]=cardDrawn;
+      286:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      286:  660:            (*z)++;}}
+      288:  661:    while((*z)-1>=0){
+      286:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      287:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       96:  650:    while((*drawntreasure)<2){
+       94:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       94:  653:        drawCard(currentPlayer, state);
+       94:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       94:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       92:  658:            temphand[(*z)]=cardDrawn;
+       92:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       92:  660:            (*z)++;}}
+       94:  661:    while((*z)-1>=0){
+       92:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       93:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      202:  650:    while((*drawntreasure)<2){
+      200:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      200:  653:        drawCard(currentPlayer, state);
+      200:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      200:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      198:  658:            temphand[(*z)]=cardDrawn;
+      198:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      198:  660:            (*z)++;}}
+      200:  661:    while((*z)-1>=0){
+      198:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      199:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      387:  650:    while((*drawntreasure)<2){
+      385:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        3:  652:            shuffle(currentPlayer, state); }
+      385:  653:        drawCard(currentPlayer, state);
+      385:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      385:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      383:  658:            temphand[(*z)]=cardDrawn;
+      383:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      383:  660:            (*z)++;}}
+      385:  661:    while((*z)-1>=0){
+      383:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      384:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      303:  650:    while((*drawntreasure)<2){
+      301:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      301:  653:        drawCard(currentPlayer, state);
+      301:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      301:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      299:  658:            temphand[(*z)]=cardDrawn;
+      299:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      299:  660:            (*z)++;}}
+      301:  661:    while((*z)-1>=0){
+      299:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      300:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      205:  650:    while((*drawntreasure)<2){
+      203:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      203:  653:        drawCard(currentPlayer, state);
+      203:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      203:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      201:  658:            temphand[(*z)]=cardDrawn;
+      201:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      201:  660:            (*z)++;}}
+      203:  661:    while((*z)-1>=0){
+      201:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      202:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      361:  650:    while((*drawntreasure)<2){
+      359:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      359:  653:        drawCard(currentPlayer, state);
+      359:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      359:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      357:  658:            temphand[(*z)]=cardDrawn;
+      357:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      357:  660:            (*z)++;}}
+      359:  661:    while((*z)-1>=0){
+      357:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      358:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       96:  650:    while((*drawntreasure)<2){
+       94:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       94:  653:        drawCard(currentPlayer, state);
+       94:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       94:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       92:  658:            temphand[(*z)]=cardDrawn;
+       92:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       92:  660:            (*z)++;}}
+       94:  661:    while((*z)-1>=0){
+       92:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       93:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      456:  650:    while((*drawntreasure)<2){
+      454:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      454:  653:        drawCard(currentPlayer, state);
+      454:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      454:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      452:  658:            temphand[(*z)]=cardDrawn;
+      452:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      452:  660:            (*z)++;}}
+      454:  661:    while((*z)-1>=0){
+      452:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      453:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      419:  650:    while((*drawntreasure)<2){
+      417:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      417:  653:        drawCard(currentPlayer, state);
+      417:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      417:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      415:  658:            temphand[(*z)]=cardDrawn;
+      415:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      415:  660:            (*z)++;}}
+      417:  661:    while((*z)-1>=0){
+      415:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      416:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       92:  650:    while((*drawntreasure)<2){
+       90:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       90:  653:        drawCard(currentPlayer, state);
+       90:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       90:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       88:  658:            temphand[(*z)]=cardDrawn;
+       88:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       88:  660:            (*z)++;}}
+       90:  661:    while((*z)-1>=0){
+       88:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       89:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      448:  650:    while((*drawntreasure)<2){
+      446:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      446:  653:        drawCard(currentPlayer, state);
+      446:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      446:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      444:  658:            temphand[(*z)]=cardDrawn;
+      444:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      444:  660:            (*z)++;}}
+      446:  661:    while((*z)-1>=0){
+      444:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      445:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+        4:  650:    while((*drawntreasure)<2){
+        2:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+        2:  653:        drawCard(currentPlayer, state);
+        2:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        2:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+    #####:  658:            temphand[(*z)]=cardDrawn;
+    #####:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  660:            (*z)++;}}
+        2:  661:    while((*z)-1>=0){
+    #####:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+        1:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      402:  650:    while((*drawntreasure)<2){
+      400:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      400:  653:        drawCard(currentPlayer, state);
+      400:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      400:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      398:  658:            temphand[(*z)]=cardDrawn;
+      398:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      398:  660:            (*z)++;}}
+      400:  661:    while((*z)-1>=0){
+      398:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      399:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      186:  650:    while((*drawntreasure)<2){
+      184:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      184:  653:        drawCard(currentPlayer, state);
+      184:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      184:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      182:  658:            temphand[(*z)]=cardDrawn;
+      182:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      182:  660:            (*z)++;}}
+      184:  661:    while((*z)-1>=0){
+      182:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      183:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      371:  650:    while((*drawntreasure)<2){
+      369:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       16:  652:            shuffle(currentPlayer, state); }
+      369:  653:        drawCard(currentPlayer, state);
+      369:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      369:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      367:  658:            temphand[(*z)]=cardDrawn;
+      367:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      367:  660:            (*z)++;}}
+      369:  661:    while((*z)-1>=0){
+      367:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      368:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      340:  650:    while((*drawntreasure)<2){
+      338:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       12:  652:            shuffle(currentPlayer, state); }
+      338:  653:        drawCard(currentPlayer, state);
+      338:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      338:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      336:  658:            temphand[(*z)]=cardDrawn;
+      336:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      336:  660:            (*z)++;}}
+      338:  661:    while((*z)-1>=0){
+      336:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      337:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      153:  650:    while((*drawntreasure)<2){
+      151:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      151:  653:        drawCard(currentPlayer, state);
+      151:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      151:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      149:  658:            temphand[(*z)]=cardDrawn;
+      149:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      149:  660:            (*z)++;}}
+      151:  661:    while((*z)-1>=0){
+      149:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      150:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      451:  650:    while((*drawntreasure)<2){
+      449:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      449:  653:        drawCard(currentPlayer, state);
+      449:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      449:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      447:  658:            temphand[(*z)]=cardDrawn;
+      447:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      447:  660:            (*z)++;}}
+      449:  661:    while((*z)-1>=0){
+      447:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      448:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      467:  650:    while((*drawntreasure)<2){
+      465:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      465:  653:        drawCard(currentPlayer, state);
+      465:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      465:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      463:  658:            temphand[(*z)]=cardDrawn;
+      463:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      463:  660:            (*z)++;}}
+      465:  661:    while((*z)-1>=0){
+      463:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      464:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      116:  650:    while((*drawntreasure)<2){
+      114:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        5:  652:            shuffle(currentPlayer, state); }
+      114:  653:        drawCard(currentPlayer, state);
+      114:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      114:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      112:  658:            temphand[(*z)]=cardDrawn;
+      112:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      112:  660:            (*z)++;}}
+      114:  661:    while((*z)-1>=0){
+      112:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      113:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      193:  650:    while((*drawntreasure)<2){
+      191:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      191:  653:        drawCard(currentPlayer, state);
+      191:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      191:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      189:  658:            temphand[(*z)]=cardDrawn;
+      189:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      189:  660:            (*z)++;}}
+      191:  661:    while((*z)-1>=0){
+      189:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      190:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      155:  650:    while((*drawntreasure)<2){
+      153:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      153:  653:        drawCard(currentPlayer, state);
+      153:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      153:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      151:  658:            temphand[(*z)]=cardDrawn;
+      151:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      151:  660:            (*z)++;}}
+      153:  661:    while((*z)-1>=0){
+      151:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      152:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      283:  650:    while((*drawntreasure)<2){
+      281:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      281:  653:        drawCard(currentPlayer, state);
+      281:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      281:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      279:  658:            temphand[(*z)]=cardDrawn;
+      279:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      279:  660:            (*z)++;}}
+      281:  661:    while((*z)-1>=0){
+      279:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      280:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      346:  650:    while((*drawntreasure)<2){
+      344:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      344:  653:        drawCard(currentPlayer, state);
+      344:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      344:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      342:  658:            temphand[(*z)]=cardDrawn;
+      342:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      342:  660:            (*z)++;}}
+      344:  661:    while((*z)-1>=0){
+      342:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      343:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      119:  650:    while((*drawntreasure)<2){
+      117:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        5:  652:            shuffle(currentPlayer, state); }
+      117:  653:        drawCard(currentPlayer, state);
+      117:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      117:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      115:  658:            temphand[(*z)]=cardDrawn;
+      115:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      115:  660:            (*z)++;}}
+      117:  661:    while((*z)-1>=0){
+      115:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      116:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       57:  650:    while((*drawntreasure)<2){
+       55:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       55:  653:        drawCard(currentPlayer, state);
+       55:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       55:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       53:  658:            temphand[(*z)]=cardDrawn;
+       53:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       53:  660:            (*z)++;}}
+       55:  661:    while((*z)-1>=0){
+       53:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       54:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       80:  650:    while((*drawntreasure)<2){
+       78:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       78:  653:        drawCard(currentPlayer, state);
+       78:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       78:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       76:  658:            temphand[(*z)]=cardDrawn;
+       76:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       76:  660:            (*z)++;}}
+       78:  661:    while((*z)-1>=0){
+       76:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       77:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      414:  650:    while((*drawntreasure)<2){
+      412:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      412:  653:        drawCard(currentPlayer, state);
+      412:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      412:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      410:  658:            temphand[(*z)]=cardDrawn;
+      410:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      410:  660:            (*z)++;}}
+      412:  661:    while((*z)-1>=0){
+      410:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      411:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      389:  650:    while((*drawntreasure)<2){
+      387:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       12:  652:            shuffle(currentPlayer, state); }
+      387:  653:        drawCard(currentPlayer, state);
+      387:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      387:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      385:  658:            temphand[(*z)]=cardDrawn;
+      385:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      385:  660:            (*z)++;}}
+      387:  661:    while((*z)-1>=0){
+      385:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      386:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       93:  650:    while((*drawntreasure)<2){
+       91:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       91:  653:        drawCard(currentPlayer, state);
+       91:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       91:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       89:  658:            temphand[(*z)]=cardDrawn;
+       89:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       89:  660:            (*z)++;}}
+       91:  661:    while((*z)-1>=0){
+       89:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       90:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       67:  650:    while((*drawntreasure)<2){
+       65:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       65:  653:        drawCard(currentPlayer, state);
+       65:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       65:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       63:  658:            temphand[(*z)]=cardDrawn;
+       63:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       63:  660:            (*z)++;}}
+       65:  661:    while((*z)-1>=0){
+       63:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       64:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      288:  650:    while((*drawntreasure)<2){
+      286:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      286:  653:        drawCard(currentPlayer, state);
+      286:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      286:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      284:  658:            temphand[(*z)]=cardDrawn;
+      284:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      284:  660:            (*z)++;}}
+      286:  661:    while((*z)-1>=0){
+      284:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      285:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      185:  650:    while((*drawntreasure)<2){
+      183:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      183:  653:        drawCard(currentPlayer, state);
+      183:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      183:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      181:  658:            temphand[(*z)]=cardDrawn;
+      181:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      181:  660:            (*z)++;}}
+      183:  661:    while((*z)-1>=0){
+      181:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      182:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      298:  650:    while((*drawntreasure)<2){
+      296:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      296:  653:        drawCard(currentPlayer, state);
+      296:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      296:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      294:  658:            temphand[(*z)]=cardDrawn;
+      294:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      294:  660:            (*z)++;}}
+      296:  661:    while((*z)-1>=0){
+      294:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      295:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      175:  650:    while((*drawntreasure)<2){
+      173:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      173:  653:        drawCard(currentPlayer, state);
+      173:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      173:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      171:  658:            temphand[(*z)]=cardDrawn;
+      171:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      171:  660:            (*z)++;}}
+      173:  661:    while((*z)-1>=0){
+      171:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      172:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+        4:  650:    while((*drawntreasure)<2){
+        2:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+        2:  653:        drawCard(currentPlayer, state);
+        2:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        2:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+    #####:  658:            temphand[(*z)]=cardDrawn;
+    #####:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  660:            (*z)++;}}
+        2:  661:    while((*z)-1>=0){
+    #####:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+        1:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      331:  650:    while((*drawntreasure)<2){
+      329:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      329:  653:        drawCard(currentPlayer, state);
+      329:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      329:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      327:  658:            temphand[(*z)]=cardDrawn;
+      327:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      327:  660:            (*z)++;}}
+      329:  661:    while((*z)-1>=0){
+      327:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      328:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       88:  650:    while((*drawntreasure)<2){
+       86:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       86:  653:        drawCard(currentPlayer, state);
+       86:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       86:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       84:  658:            temphand[(*z)]=cardDrawn;
+       84:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       84:  660:            (*z)++;}}
+       86:  661:    while((*z)-1>=0){
+       84:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       85:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      389:  650:    while((*drawntreasure)<2){
+      387:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      387:  653:        drawCard(currentPlayer, state);
+      387:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      387:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      385:  658:            temphand[(*z)]=cardDrawn;
+      385:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      385:  660:            (*z)++;}}
+      387:  661:    while((*z)-1>=0){
+      385:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      386:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      343:  650:    while((*drawntreasure)<2){
+      341:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      341:  653:        drawCard(currentPlayer, state);
+      341:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      341:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      339:  658:            temphand[(*z)]=cardDrawn;
+      339:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      339:  660:            (*z)++;}}
+      341:  661:    while((*z)-1>=0){
+      339:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      340:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      463:  650:    while((*drawntreasure)<2){
+      461:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      461:  653:        drawCard(currentPlayer, state);
+      461:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      461:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      459:  658:            temphand[(*z)]=cardDrawn;
+      459:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      459:  660:            (*z)++;}}
+      461:  661:    while((*z)-1>=0){
+      459:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      460:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      108:  650:    while((*drawntreasure)<2){
+      106:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      106:  653:        drawCard(currentPlayer, state);
+      106:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      106:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      104:  658:            temphand[(*z)]=cardDrawn;
+      104:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      104:  660:            (*z)++;}}
+      106:  661:    while((*z)-1>=0){
+      104:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      105:  663:        (*z)=(*z)-1;} }
+1
+        2:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      176:  650:    while((*drawntreasure)<2){
+      172:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      172:  653:        drawCard(currentPlayer, state);
+      172:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      172:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        4:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      168:  658:            temphand[(*z)]=cardDrawn;
+      168:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      168:  660:            (*z)++;}}
+      172:  661:    while((*z)-1>=0){
+      168:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      170:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      312:  650:    while((*drawntreasure)<2){
+      310:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        9:  652:            shuffle(currentPlayer, state); }
+      310:  653:        drawCard(currentPlayer, state);
+      310:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      310:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      308:  658:            temphand[(*z)]=cardDrawn;
+      308:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      308:  660:            (*z)++;}}
+      310:  661:    while((*z)-1>=0){
+      308:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      309:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      469:  650:    while((*drawntreasure)<2){
+      467:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      467:  653:        drawCard(currentPlayer, state);
+      467:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      467:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      465:  658:            temphand[(*z)]=cardDrawn;
+      465:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      465:  660:            (*z)++;}}
+      467:  661:    while((*z)-1>=0){
+      465:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      466:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      300:  650:    while((*drawntreasure)<2){
+      298:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        4:  652:            shuffle(currentPlayer, state); }
+      298:  653:        drawCard(currentPlayer, state);
+      298:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      298:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      296:  658:            temphand[(*z)]=cardDrawn;
+      296:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      296:  660:            (*z)++;}}
+      298:  661:    while((*z)-1>=0){
+      296:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      297:  663:        (*z)=(*z)-1;} }
+0
+        2:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      854:  650:    while((*drawntreasure)<2){
+      850:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      850:  653:        drawCard(currentPlayer, state);
+      850:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      850:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        4:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      846:  658:            temphand[(*z)]=cardDrawn;
+      846:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      846:  660:            (*z)++;}}
+      850:  661:    while((*z)-1>=0){
+      846:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      848:  663:        (*z)=(*z)-1;} }
+0
+        2:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      462:  650:    while((*drawntreasure)<2){
+      458:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      458:  653:        drawCard(currentPlayer, state);
+      458:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      458:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        4:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      454:  658:            temphand[(*z)]=cardDrawn;
+      454:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      454:  660:            (*z)++;}}
+      458:  661:    while((*z)-1>=0){
+      454:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      456:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+        4:  650:    while((*drawntreasure)<2){
+        2:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+        2:  653:        drawCard(currentPlayer, state);
+        2:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        2:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+    #####:  658:            temphand[(*z)]=cardDrawn;
+    #####:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  660:            (*z)++;}}
+        2:  661:    while((*z)-1>=0){
+    #####:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+        1:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      109:  650:    while((*drawntreasure)<2){
+      107:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      107:  653:        drawCard(currentPlayer, state);
+      107:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      107:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      105:  658:            temphand[(*z)]=cardDrawn;
+      105:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      105:  660:            (*z)++;}}
+      107:  661:    while((*z)-1>=0){
+      105:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      106:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      290:  650:    while((*drawntreasure)<2){
+      288:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      288:  653:        drawCard(currentPlayer, state);
+      288:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      288:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      286:  658:            temphand[(*z)]=cardDrawn;
+      286:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      286:  660:            (*z)++;}}
+      288:  661:    while((*z)-1>=0){
+      286:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      287:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       54:  650:    while((*drawntreasure)<2){
+       52:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       52:  653:        drawCard(currentPlayer, state);
+       52:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       52:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       50:  658:            temphand[(*z)]=cardDrawn;
+       50:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       50:  660:            (*z)++;}}
+       52:  661:    while((*z)-1>=0){
+       50:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       51:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      358:  650:    while((*drawntreasure)<2){
+      356:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      356:  653:        drawCard(currentPlayer, state);
+      356:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      356:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      354:  658:            temphand[(*z)]=cardDrawn;
+      354:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      354:  660:            (*z)++;}}
+      356:  661:    while((*z)-1>=0){
+      354:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      355:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      403:  650:    while((*drawntreasure)<2){
+      401:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      401:  653:        drawCard(currentPlayer, state);
+      401:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      401:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      399:  658:            temphand[(*z)]=cardDrawn;
+      399:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      399:  660:            (*z)++;}}
+      401:  661:    while((*z)-1>=0){
+      399:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      400:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      124:  650:    while((*drawntreasure)<2){
+      122:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      122:  653:        drawCard(currentPlayer, state);
+      122:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      122:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      120:  658:            temphand[(*z)]=cardDrawn;
+      120:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      120:  660:            (*z)++;}}
+      122:  661:    while((*z)-1>=0){
+      120:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      121:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       36:  650:    while((*drawntreasure)<2){
+       34:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       13:  652:            shuffle(currentPlayer, state); }
+       34:  653:        drawCard(currentPlayer, state);
+       34:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       34:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       32:  658:            temphand[(*z)]=cardDrawn;
+       32:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       32:  660:            (*z)++;}}
+       34:  661:    while((*z)-1>=0){
+       32:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       33:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      484:  650:    while((*drawntreasure)<2){
+      482:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      482:  653:        drawCard(currentPlayer, state);
+      482:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      482:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      480:  658:            temphand[(*z)]=cardDrawn;
+      480:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      480:  660:            (*z)++;}}
+      482:  661:    while((*z)-1>=0){
+      480:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      481:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      207:  650:    while((*drawntreasure)<2){
+      205:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      205:  653:        drawCard(currentPlayer, state);
+      205:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      205:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      203:  658:            temphand[(*z)]=cardDrawn;
+      203:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      203:  660:            (*z)++;}}
+      205:  661:    while((*z)-1>=0){
+      203:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      204:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       32:  650:    while((*drawntreasure)<2){
+       30:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       30:  653:        drawCard(currentPlayer, state);
+       30:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       30:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       28:  658:            temphand[(*z)]=cardDrawn;
+       28:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       28:  660:            (*z)++;}}
+       30:  661:    while((*z)-1>=0){
+       28:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       29:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      148:  650:    while((*drawntreasure)<2){
+      146:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      146:  653:        drawCard(currentPlayer, state);
+      146:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      146:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      144:  658:            temphand[(*z)]=cardDrawn;
+      144:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      144:  660:            (*z)++;}}
+      146:  661:    while((*z)-1>=0){
+      144:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      145:  663:        (*z)=(*z)-1;} }
+0
+        2:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      469:  650:    while((*drawntreasure)<2){
+      465:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      465:  653:        drawCard(currentPlayer, state);
+      465:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      465:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        4:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      461:  658:            temphand[(*z)]=cardDrawn;
+      461:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      461:  660:            (*z)++;}}
+      465:  661:    while((*z)-1>=0){
+      461:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      463:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      346:  650:    while((*drawntreasure)<2){
+      344:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      344:  653:        drawCard(currentPlayer, state);
+      344:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      344:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      342:  658:            temphand[(*z)]=cardDrawn;
+      342:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      342:  660:            (*z)++;}}
+      344:  661:    while((*z)-1>=0){
+      342:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      343:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      244:  650:    while((*drawntreasure)<2){
+      242:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      242:  653:        drawCard(currentPlayer, state);
+      242:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      242:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      240:  658:            temphand[(*z)]=cardDrawn;
+      240:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      240:  660:            (*z)++;}}
+      242:  661:    while((*z)-1>=0){
+      240:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      241:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      428:  650:    while((*drawntreasure)<2){
+      426:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      426:  653:        drawCard(currentPlayer, state);
+      426:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      426:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      424:  658:            temphand[(*z)]=cardDrawn;
+      424:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      424:  660:            (*z)++;}}
+      426:  661:    while((*z)-1>=0){
+      424:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      425:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+        6:  650:    while((*drawntreasure)<2){
+        4:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+        4:  653:        drawCard(currentPlayer, state);
+        4:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        4:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+        2:  658:            temphand[(*z)]=cardDrawn;
+        2:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+        2:  660:            (*z)++;}}
+        4:  661:    while((*z)-1>=0){
+        2:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+        3:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      360:  650:    while((*drawntreasure)<2){
+      358:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      358:  653:        drawCard(currentPlayer, state);
+      358:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      358:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      356:  658:            temphand[(*z)]=cardDrawn;
+      356:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      356:  660:            (*z)++;}}
+      358:  661:    while((*z)-1>=0){
+      356:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      357:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      464:  650:    while((*drawntreasure)<2){
+      462:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      462:  653:        drawCard(currentPlayer, state);
+      462:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      462:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      460:  658:            temphand[(*z)]=cardDrawn;
+      460:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      460:  660:            (*z)++;}}
+      462:  661:    while((*z)-1>=0){
+      460:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      461:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      108:  650:    while((*drawntreasure)<2){
+      106:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      106:  653:        drawCard(currentPlayer, state);
+      106:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      106:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      104:  658:            temphand[(*z)]=cardDrawn;
+      104:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      104:  660:            (*z)++;}}
+      106:  661:    while((*z)-1>=0){
+      104:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      105:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      274:  650:    while((*drawntreasure)<2){
+      272:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      272:  653:        drawCard(currentPlayer, state);
+      272:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      272:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      270:  658:            temphand[(*z)]=cardDrawn;
+      270:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      270:  660:            (*z)++;}}
+      272:  661:    while((*z)-1>=0){
+      270:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      271:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      124:  650:    while((*drawntreasure)<2){
+      122:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      122:  653:        drawCard(currentPlayer, state);
+      122:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      122:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      120:  658:            temphand[(*z)]=cardDrawn;
+      120:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      120:  660:            (*z)++;}}
+      122:  661:    while((*z)-1>=0){
+      120:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      121:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      122:  650:    while((*drawntreasure)<2){
+      120:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        3:  652:            shuffle(currentPlayer, state); }
+      120:  653:        drawCard(currentPlayer, state);
+      120:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      120:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      118:  658:            temphand[(*z)]=cardDrawn;
+      118:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      118:  660:            (*z)++;}}
+      120:  661:    while((*z)-1>=0){
+      118:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      119:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      228:  650:    while((*drawntreasure)<2){
+      226:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      226:  653:        drawCard(currentPlayer, state);
+      226:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      226:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      224:  658:            temphand[(*z)]=cardDrawn;
+      224:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      224:  660:            (*z)++;}}
+      226:  661:    while((*z)-1>=0){
+      224:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      225:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      430:  650:    while((*drawntreasure)<2){
+      428:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      428:  653:        drawCard(currentPlayer, state);
+      428:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      428:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      426:  658:            temphand[(*z)]=cardDrawn;
+      426:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      426:  660:            (*z)++;}}
+      428:  661:    while((*z)-1>=0){
+      426:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      427:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       84:  650:    while((*drawntreasure)<2){
+       82:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       82:  653:        drawCard(currentPlayer, state);
+       82:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       82:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       80:  658:            temphand[(*z)]=cardDrawn;
+       80:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       80:  660:            (*z)++;}}
+       82:  661:    while((*z)-1>=0){
+       80:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       81:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       95:  650:    while((*drawntreasure)<2){
+       93:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       93:  653:        drawCard(currentPlayer, state);
+       93:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       93:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       91:  658:            temphand[(*z)]=cardDrawn;
+       91:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       91:  660:            (*z)++;}}
+       93:  661:    while((*z)-1>=0){
+       91:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       92:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      446:  650:    while((*drawntreasure)<2){
+      444:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      444:  653:        drawCard(currentPlayer, state);
+      444:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      444:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      442:  658:            temphand[(*z)]=cardDrawn;
+      442:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      442:  660:            (*z)++;}}
+      444:  661:    while((*z)-1>=0){
+      442:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      443:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      158:  650:    while((*drawntreasure)<2){
+      156:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      156:  653:        drawCard(currentPlayer, state);
+      156:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      156:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      154:  658:            temphand[(*z)]=cardDrawn;
+      154:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      154:  660:            (*z)++;}}
+      156:  661:    while((*z)-1>=0){
+      154:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      155:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      376:  650:    while((*drawntreasure)<2){
+      374:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      374:  653:        drawCard(currentPlayer, state);
+      374:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      374:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      372:  658:            temphand[(*z)]=cardDrawn;
+      372:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      372:  660:            (*z)++;}}
+      374:  661:    while((*z)-1>=0){
+      372:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      373:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      475:  650:    while((*drawntreasure)<2){
+      473:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      473:  653:        drawCard(currentPlayer, state);
+      473:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      473:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      471:  658:            temphand[(*z)]=cardDrawn;
+      471:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      471:  660:            (*z)++;}}
+      473:  661:    while((*z)-1>=0){
+      471:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      472:  663:        (*z)=(*z)-1;} }
+1
+        2:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      769:  650:    while((*drawntreasure)<2){
+      765:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      765:  653:        drawCard(currentPlayer, state);
+      765:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      765:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        4:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      761:  658:            temphand[(*z)]=cardDrawn;
+      761:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      761:  660:            (*z)++;}}
+      765:  661:    while((*z)-1>=0){
+      761:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      763:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      135:  650:    while((*drawntreasure)<2){
+      133:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      133:  653:        drawCard(currentPlayer, state);
+      133:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      133:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      131:  658:            temphand[(*z)]=cardDrawn;
+      131:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      131:  660:            (*z)++;}}
+      133:  661:    while((*z)-1>=0){
+      131:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      132:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      286:  650:    while((*drawntreasure)<2){
+      284:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        5:  652:            shuffle(currentPlayer, state); }
+      284:  653:        drawCard(currentPlayer, state);
+      284:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      284:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      282:  658:            temphand[(*z)]=cardDrawn;
+      282:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      282:  660:            (*z)++;}}
+      284:  661:    while((*z)-1>=0){
+      282:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      283:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      372:  650:    while((*drawntreasure)<2){
+      370:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      370:  653:        drawCard(currentPlayer, state);
+      370:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      370:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      368:  658:            temphand[(*z)]=cardDrawn;
+      368:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      368:  660:            (*z)++;}}
+      370:  661:    while((*z)-1>=0){
+      368:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      369:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       54:  650:    while((*drawntreasure)<2){
+       52:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       52:  653:        drawCard(currentPlayer, state);
+       52:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       52:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       50:  658:            temphand[(*z)]=cardDrawn;
+       50:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       50:  660:            (*z)++;}}
+       52:  661:    while((*z)-1>=0){
+       50:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       51:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      425:  650:    while((*drawntreasure)<2){
+      423:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        8:  652:            shuffle(currentPlayer, state); }
+      423:  653:        drawCard(currentPlayer, state);
+      423:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      423:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      421:  658:            temphand[(*z)]=cardDrawn;
+      421:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      421:  660:            (*z)++;}}
+      423:  661:    while((*z)-1>=0){
+      421:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      422:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      210:  650:    while((*drawntreasure)<2){
+      208:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      208:  653:        drawCard(currentPlayer, state);
+      208:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      208:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      206:  658:            temphand[(*z)]=cardDrawn;
+      206:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      206:  660:            (*z)++;}}
+      208:  661:    while((*z)-1>=0){
+      206:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      207:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      294:  650:    while((*drawntreasure)<2){
+      292:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      292:  653:        drawCard(currentPlayer, state);
+      292:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      292:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      290:  658:            temphand[(*z)]=cardDrawn;
+      290:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      290:  660:            (*z)++;}}
+      292:  661:    while((*z)-1>=0){
+      290:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      291:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      430:  650:    while((*drawntreasure)<2){
+      428:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      428:  653:        drawCard(currentPlayer, state);
+      428:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      428:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      426:  658:            temphand[(*z)]=cardDrawn;
+      426:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      426:  660:            (*z)++;}}
+      428:  661:    while((*z)-1>=0){
+      426:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      427:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+        4:  650:    while((*drawntreasure)<2){
+        2:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+        2:  653:        drawCard(currentPlayer, state);
+        2:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        2:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+    #####:  658:            temphand[(*z)]=cardDrawn;
+    #####:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  660:            (*z)++;}}
+        2:  661:    while((*z)-1>=0){
+    #####:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+        1:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      115:  650:    while((*drawntreasure)<2){
+      113:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      113:  653:        drawCard(currentPlayer, state);
+      113:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      113:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      111:  658:            temphand[(*z)]=cardDrawn;
+      111:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      111:  660:            (*z)++;}}
+      113:  661:    while((*z)-1>=0){
+      111:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      112:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      259:  650:    while((*drawntreasure)<2){
+      257:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       12:  652:            shuffle(currentPlayer, state); }
+      257:  653:        drawCard(currentPlayer, state);
+      257:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      257:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      255:  658:            temphand[(*z)]=cardDrawn;
+      255:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      255:  660:            (*z)++;}}
+      257:  661:    while((*z)-1>=0){
+      255:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      256:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+       22:  650:    while((*drawntreasure)<2){
+       20:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       20:  653:        drawCard(currentPlayer, state);
+       20:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       20:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       18:  658:            temphand[(*z)]=cardDrawn;
+       18:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       18:  660:            (*z)++;}}
+       20:  661:    while((*z)-1>=0){
+       18:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       19:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      117:  650:    while((*drawntreasure)<2){
+      115:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      115:  653:        drawCard(currentPlayer, state);
+      115:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      115:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      113:  658:            temphand[(*z)]=cardDrawn;
+      113:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      113:  660:            (*z)++;}}
+      115:  661:    while((*z)-1>=0){
+      113:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      114:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      398:  650:    while((*drawntreasure)<2){
+      396:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+       18:  652:            shuffle(currentPlayer, state); }
+      396:  653:        drawCard(currentPlayer, state);
+      396:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      396:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      394:  658:            temphand[(*z)]=cardDrawn;
+      394:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      394:  660:            (*z)++;}}
+      396:  661:    while((*z)-1>=0){
+      394:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      395:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      204:  650:    while((*drawntreasure)<2){
+      202:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      202:  653:        drawCard(currentPlayer, state);
+      202:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      202:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      200:  658:            temphand[(*z)]=cardDrawn;
+      200:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      200:  660:            (*z)++;}}
+      202:  661:    while((*z)-1>=0){
+      200:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      201:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      100:  650:    while((*drawntreasure)<2){
+       98:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+       98:  653:        drawCard(currentPlayer, state);
+       98:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+       98:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+       96:  658:            temphand[(*z)]=cardDrawn;
+       96:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+       96:  660:            (*z)++;}}
+       98:  661:    while((*z)-1>=0){
+       96:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+       97:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      250:  650:    while((*drawntreasure)<2){
+      248:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+        4:  652:            shuffle(currentPlayer, state); }
+      248:  653:        drawCard(currentPlayer, state);
+      248:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      248:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      246:  658:            temphand[(*z)]=cardDrawn;
+      246:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      246:  660:            (*z)++;}}
+      248:  661:    while((*z)-1>=0){
+      246:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      247:  663:        (*z)=(*z)-1;} }
+1
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      367:  650:    while((*drawntreasure)<2){
+      365:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      365:  653:        drawCard(currentPlayer, state);
+      365:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      365:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      363:  658:            temphand[(*z)]=cardDrawn;
+      363:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      363:  660:            (*z)++;}}
+      365:  661:    while((*z)-1>=0){
+      363:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      364:  663:        (*z)=(*z)-1;} }
+0
+        1:  649:void cardEffect_adventurer(struct gameState* state, int* drawntreasure, int currentPlayer, int cardDrawn, int* temphand, int* z){
+      390:  650:    while((*drawntreasure)<2){
+      388:  651:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  652:            shuffle(currentPlayer, state); }
+      388:  653:        drawCard(currentPlayer, state);
+      388:  654:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+      388:  655:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  656:            (*drawntreasure)++;
+        -:  657:        else{
+      386:  658:            temphand[(*z)]=cardDrawn;
+      386:  659:            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      386:  660:            (*z)++;}}
+      388:  661:    while((*z)-1>=0){
+      386:  662:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[(*z)-1]; // discard all cards in play that have been drawn
+      387:  663:        (*z)=(*z)-1;} }

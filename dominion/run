@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -f t.txt
+#python2.7 tarantula_results.py > t.txt
+python2.7 tarantula_results.py
