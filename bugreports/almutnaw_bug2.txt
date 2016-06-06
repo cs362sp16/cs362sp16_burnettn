@@ -1,0 +1,11 @@
+BUG:
+Village is not played correctly
+
+SEVERITY:
+MAJOR
+
+TEST TO REPEAT:
+dominion/cardtest1.c
+
+DETAILS:
+The Village card correctly adds another card to the hand of the user, but it does not correclty give the user 2 more actions.

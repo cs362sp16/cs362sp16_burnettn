@@ -11,8 +11,9 @@ int testVillage(int* failed){
     g.whoseTurn = 0;
     int cards = g.handCount[0];
     int actions = g.numActions; 
+    g.hand[0][0] = village; 
 
-    cardEffect(village, 0, 0, 0, &g, 0, &r);
+    playCard(0, 0, 0, 0, &g);
         //Only card name and state matter for this call
     myassert(failed, cards == g.handCount[0], "Village should give 1 more card");
     myassert(failed, actions+1 == g.numActions, "Village should give 2 more actions");

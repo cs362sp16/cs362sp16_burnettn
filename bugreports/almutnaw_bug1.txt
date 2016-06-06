@@ -1,0 +1,11 @@
+BUG:
+The game is not scored correctly.
+
+SEVERITY:
+CRITICAL
+
+TEST TO REPEAT:
+dominion/unittest3.c
+
+DETAILS:
+The game does not score the kingdom cards correctly. This means that the game cannot accurately determine a winner.

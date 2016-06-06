@@ -31,7 +31,7 @@ testdominion.o: testdominion.c
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-unittestresults.out: test_driver.o
+unittestresults.out: test playdom
 	rm -rf unittestresults.out
 	./call_tests > unittestresults.out
 	echo "GCOV AFTER 1 TEST" >> unittestresults.out
@@ -40,8 +40,25 @@ unittestresults.out: test_driver.o
 	echo "GCOV AFTER PlAYING A GAME" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-test: test_driver.o  
+almutnaw_unittestresults.out: almutnaw_test playdom
+	rm -rf almutnaw_unittestresults.out
+	./call_tests > almutnaw_unittestresults.out
+	#./call_tests 
+	echo "GCOV AFTER 1 TEST" >> almutnaw_unittestresults.out
+	gcov almutnaw_dominion.c >> almutnaw_unittestresults.out
+	./playdom 3 >> results.out
+	echo "GCOV AFTER PlAYING A GAME" >> almutnaw_unittestresults.out
+	gcov dominion.c >> almutnaw_unittestresults.out
+
+test: test_driver.o dominion.o rngs.o interface.o
 	gcc -o call_tests -g asimpleunittest.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c test_driver.o dominion.o rngs.o interface.o $(CFLAGS)
+
+almutnaw_dominion.o: almutnaw_dominion.c
+	gcc -c almutnaw_dominion.c -g  $(CFLAGS)
+	
+
+almutnaw_test: test_driver.o almutnaw_dominion.o rngs.o interface.o
+	gcc -o call_tests -g asimpleunittest.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c test_driver.o almutnaw_dominion.o rngs.o interface.o $(CFLAGS)
 
 rand: randomtestcard2.o randomtestcard1.o randomtestadventurer.o dominion.o rngs.o interface.o 
 	gcc -o test_adventurer -g randomtestadventurer.o dominion.o rngs.o interface.o $(CFLAGS)

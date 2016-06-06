@@ -1,0 +1,11 @@
+BUG:
+Great Hall is not played correctly
+
+SEVERITY:
+MAJOR
+
+TEST TO REPEAT:
+dominion/cardtest2.c
+
+DETAILS:
+The Great Hall card correctly adds another card to the hand of the user, but it does not correclty give the user the +1 action it should give.

@@ -1,0 +1,15 @@
+FAILED ASSERTION: I should be allowed to play with a lot of people!
+FAILED ASSERTION: Score Should be 11
+FAILED ASSERTION: Score Should be 19
+FAILED ASSERTION: Village should give 2 more actions
+FAILED ASSERTION: great_hall should give 1 more action
+GCOV AFTER 1 TEST
+File 'almutnaw_dominion.c'
+Lines executed:30.85% of 564
+Creating 'almutnaw_dominion.c.gcov'
+
+GCOV AFTER PlAYING A GAME
+File 'dominion.c'
+Lines executed:43.69% of 563
+Creating 'dominion.c.gcov'
+

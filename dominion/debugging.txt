@@ -1,0 +1,11 @@
+In my code I decided to find the bug of checking a users score.
+I started by checking my unit test, where I added a few property cards, and checked if the score incremented properly.
+The function I called in my unit test was "scoreFor".
+Everything in the scoreFor function appeared to look fine, and I could not figure out how it was messing up the math.
+GDB was not very helpful in this solution, as I just did not see the code enter the correct conditional statements.
+Eventually I finally read slower through the code, and saw that the function looped through the discard count twice, and never the decks count.
+Agans' principles that applied the closest to my situation were:
+1) Rule #7 Check the Plug
+    I was mostly reading the comments of the function, and hadn't been taking the time to carefully read through the for loop. I had assumed that silly syntax errors like that would not be in the code, especially when the comments said DECK. I needed to question my assumptions, and look deeper.
+2) Rule #3 Quit Thinking and Look
+    I had spent a significant time considering the logic flow, and considering the makeup of the struct, and where logic errors could be occuring. However all I needed to do was look at the code and spot the simple copy and paste error.
