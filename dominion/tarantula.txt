@@ -1,0 +1,5 @@
+To complete my tarantula implementation I used the following methods:
+"make tarantula" compiles an executable called "adventurer_tarantula" which uses a random seed to run an implemenation of a random tester to test the adventurer function.
+The tarantula_driver script compiles the executable, and runs it a set number of times. Each time, it prints a 1 or 0 (for failing of passing) to the user, and prints the gcov of the adventurer function (using grep).
+The tarantula_results.py script then iterates through this file and prints out the tarantula suspiciousness of each line of code to tarantula_results.txt.
+When running tarantula on my dominion implementation, I found that one line of code was much more suspicious than the rest, and I started my hunt to fix the bug there. 
