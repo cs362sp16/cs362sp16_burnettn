@@ -17,7 +17,7 @@ int testScoreFor(int* failed){
     g.coins = 10;
     //(g.supplyCount)[p] = 1;
     buyCard(province, &g);
-
+/*
     for(r = 0; r < g.handCount[1]; r++)
         printf("In hand: %d\n", g.hand[1][r]);
 
@@ -28,7 +28,7 @@ int testScoreFor(int* failed){
         printf("In deck: %d\n", g.deck[1][r]);
 
     printf("Score is: %d\n", scoreFor(1, &g));
-
+*/
     myassert(failed, scoreFor(1, &g) == 9, "Score Should be 9");
 
     g.whoseTurn = 1;
@@ -37,7 +37,7 @@ int testScoreFor(int* failed){
     //(g.supplyCount)[p] = 1;
     buyCard(province, &g);
     
-    printf("Score is: %d\n", scoreFor(1, &g));
+  //  printf("Score is: %d\n", scoreFor(1, &g));
     myassert(failed, scoreFor(1, &g) == 15, "Score Should be 15");
 
 

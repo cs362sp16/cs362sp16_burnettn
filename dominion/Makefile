@@ -36,9 +36,9 @@ unittestresults.out: test playdom
 	./call_tests > unittestresults.out
 	echo "GCOV AFTER 1 TEST" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> results.out
-	echo "GCOV AFTER PlAYING A GAME" >> unittestresults.out
-	gcov dominion.c >> unittestresults.out
+	#./playdom 3 >> results.out
+	#echo "GCOV AFTER PlAYING A GAME" >> unittestresults.out
+	#gcov dominion.c >> unittestresults.out
 
 almutnaw_unittestresults.out: almutnaw_test playdom
 	rm -rf almutnaw_unittestresults.out
@@ -46,19 +46,30 @@ almutnaw_unittestresults.out: almutnaw_test playdom
 	#./call_tests 
 	echo "GCOV AFTER 1 TEST" >> almutnaw_unittestresults.out
 	gcov almutnaw_dominion.c >> almutnaw_unittestresults.out
-	./playdom 3 >> results.out
-	echo "GCOV AFTER PlAYING A GAME" >> almutnaw_unittestresults.out
-	gcov dominion.c >> almutnaw_unittestresults.out
+
+merdlera_unittestresults.out: merdlera_test playdom
+	rm -rf merdlera_unittestresults.out
+	./call_tests > merdlera_unittestresults.out
+	#./call_tests 
+	echo "GCOV AFTER 1 TEST" >> merdlera_unittestresults.out
+	gcov merdlera_dominion.c >> merdlera_unittestresults.out
 
 test: test_driver.o dominion.o rngs.o interface.o
 	gcc -o call_tests -g asimpleunittest.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c test_driver.o dominion.o rngs.o interface.o $(CFLAGS)
 
 almutnaw_dominion.o: almutnaw_dominion.c
-	gcc -c almutnaw_dominion.c -g  $(CFLAGS)
+	gcc -c almutnaw_dominion.c -g  $(CFLAGS) 
 	
 
 almutnaw_test: test_driver.o almutnaw_dominion.o rngs.o interface.o
 	gcc -o call_tests -g asimpleunittest.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c test_driver.o almutnaw_dominion.o rngs.o interface.o $(CFLAGS)
+
+merdlera_dominion.o: merdlera_dominion.c
+	gcc -c merdlera_dominion.c -g  $(CFLAGS) -std=c99
+	
+merdlera_test: test_driver.o merdlera_dominion.o rngs.o interface.o
+	gcc -o call_tests -g asimpleunittest.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c test_driver.o merdlera_dominion.o rngs.o interface.o $(CFLAGS)
+
 
 rand: randomtestcard2.o randomtestcard1.o randomtestadventurer.o dominion.o rngs.o interface.o 
 	gcc -o test_adventurer -g randomtestadventurer.o dominion.o rngs.o interface.o $(CFLAGS)
@@ -89,6 +100,15 @@ rand: randomtestcard2.o randomtestcard1.o randomtestadventurer.o dominion.o rngs
 	gcov -f dominion.c | grep -A 1 "smithy" >> randomtestcard2.out 
 	echo "" >> randomtestcard2.out
 
+randoms: testdominion.out almutnaw_testdominion.out merdlera_testdominion.out
+
+almutnaw_testdominion.out: testdominion.o almutnaw_dominion.o rngs.o interface.o
+	gcc -o almutnaw_testdominion -g testdominion.o almutnaw_dominion.o  rngs.o interface.o $(CFLAGS)
+
+merdlera_testdominion.out: testdominion.o merdlera_dominion.o rngs.o interface.o
+	gcc -o merdlera_testdominion -g testdominion.o merdlera_dominion.o  rngs.o interface.o $(CFLAGS)
+
+
 testdominion.out: testdominion.o dominion.o rngs.o interface.o 
 	gcc -o testdominion -g testdominion.o dominion.o  rngs.o interface.o $(CFLAGS)
 
@@ -101,7 +121,7 @@ tarantula.o: tarantula.c
 tarantula: adventurer_turantula.o dominion.o rngs.o interface.o
 	gcc -o adventurer_turantula -g adventurer_turantula.o dominion.o rngs.o interface.o $(CFLAGS)
 
-all: playdom player testdominion.out
+all: playdom player 
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM

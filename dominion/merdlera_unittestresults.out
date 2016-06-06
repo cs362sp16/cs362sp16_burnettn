@@ -2,7 +2,7 @@ FAILED ASSERTION: I should be allowed to play with a lot of people!
 FAILED ASSERTION: Score Should be 9
 FAILED ASSERTION: Score Should be 15
 GCOV AFTER 1 TEST
-File 'almutnaw_dominion.c'
+File 'merdlera_dominion.c'
 Lines executed:32.62% of 564
-Creating 'almutnaw_dominion.c.gcov'
+Creating 'merdlera_dominion.c.gcov'
 

@@ -1,10 +1,6 @@
+FAILED ASSERTION: I should be allowed to play with a lot of people!
 GCOV AFTER 1 TEST
 File 'dominion.c'
 Lines executed:32.86% of 563
-Creating 'dominion.c.gcov'
-
-GCOV AFTER PlAYING A GAME
-File 'dominion.c'
-Lines executed:45.47% of 563
 Creating 'dominion.c.gcov'
 
